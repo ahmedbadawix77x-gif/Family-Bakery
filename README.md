@@ -38,8 +38,4 @@ A beautifully crafted, single-page landing site for **Family Bakery**, designed 
 - **Vanilla JavaScript**: Scroll detection + smooth navigation
 - **Google Fonts**: `Playfair Display`, `Lato`
 
-## 📂 Project Structure
-family-bakery/
-├── index.html # Single-page layout
-├── style.css # All styles (with :root variables)
-└── /assets/ # (Optional) — recommended for images/fonts
+
