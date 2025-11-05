@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Place this before </body> in your index.html -->
+<div class="scroll-shortcut" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'});" title="Go to Offers">
+  <!-- Example icon from icons8, or you can use emoji or SVG -->
+  <span class="shortcut-icon">
+    <img src="https://img.icons8.com/color/48/croissant.png" alt="Offers" style="width:36px;height:36px;">
+  </span>
+  <span class="scroll-shortcut-label">Our Offers</span>
+</div>
+<script>
+  // Show/hide shortcut on scroll
+  window.addEventListener('scroll', function() {
+    const btn = document.querySelector('.scroll-shortcut');
+    if(window.scrollY > 100) {
+      btn.style.display = 'flex';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+  // Start hidden on load
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('.scroll-shortcut').style.display = 'none';
+  });
+</script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon" style="background: linear-gradient(135deg, #fff8ee 70%, #ffe5b4 100%);">
+        <img src="https://img.icons8.com/color/48/bread.png" alt="Bakery Logo" style="width:38px;height:38px;vertical-align:middle;border-radius:50%;">
+      </span>
+      <span class="logo-text">Bakery</span>
+    </div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#offer">Our Offer</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h3 class="hero-welcome">Welcome to</h3>
+      <h1 class="hero-title">Family Bakery</h1>
+      <p class="hero-desc">
+        We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.
+      </p>
+      <div class="hero-actions">
+        <a href="#about" class="btn">Learn More</a>
+        <a href="#contact" class="btn secondary">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="about-image">
+      <img src="./image/1(5).jpg" alt="Bakery About">
+    </div>
+    <div class="about-content">
+      <h2 class="about-title">Who we are?</h2>
+      <p class="about-desc">
+        We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it makes our lives better.
+      </p>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <span class="icon" style="background:#e4fad5;"><img src="https://img.icons8.com/emoji/24/000000/seedling-emoji.png"/></span>
+          We care about environment.
+        </li>
+        <li class="about-list-item">
+          <span class="icon" style="background:#f1e6f8;"><img src="https://img.icons8.com/color/24/000000/conference-call--v2.png"/></span>
+          We are trusted by hundreds of clients.
+        </li>
+        <li class="about-list-item">
+          <span class="icon" style="background:#fffbe8;"><img src="https://img.icons8.com/color/24/000000/like--v3.png"/></span>
+          Social media loves us!
+        </li>
+        <li class="about-list-item">
+          <span class="icon" style="background:#e9f0ff;"><img src="https://img.icons8.com/color/24/000000/checked-checkbox.png"/></span>
+          This list is super easy to create.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Offer Section -->
+  <section class="section offer-section" id="offer">
+    <h2 class="section-title">Our Offer</h2>
+    <div class="offer-list">
+      <div class="offer-card">
+        <img class="offer-img" src="./image/1 (1).jpg" alt="Bread">
+        <h3 class="offer-card-title">Daily Fresh Breads</h3>
+        <p class="offer-card-desc">
+          Fresh, crusty, artisan breads baked every morning by our master bakers.
+        </p>
+      </div>
+      <div class="offer-card">
+        <img class="offer-img" src="./image/1 (2).jpg" alt="Pastries">
+        <h3 class="offer-card-title">Pastries & Sweets</h3>
+        <p class="offer-card-desc">
+          Tasty croissants, Danish pastries, and sweet treats to brighten your day.
+        </p>
+      </div>
+      <div class="offer-card">
+        <img class="offer-img" src="./image/1 (3).jpg" alt="Cakes">
+        <h3 class="offer-card-title">Cakes & Custom Orders</h3>
+        <p class="offer-card-desc">
+          Celebrate with our beautiful cakes and custom bakery orders for every event.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery-section" id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./image/77.jpg" alt="Bakery Display">
+      </div>
+      <div class="gallery-item">
+        <img src="./image/78.jpg" alt="Bakery Shelves">
+      </div>
+      <div class="gallery-item">
+        <img src="./image/79.jpg" alt="Bakery Bread">
+      </div>
+      <div class="gallery-item">
+        <img src="./image/80.jpg" alt="Bakery Pastries">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <h2 class="contact-title">Contact Us</h2>
+    <form class="contact-form" autocomplete="off">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="logo-icon">
+        <img src="https://img.icons8.com/color/48/bread.png" alt="Bakery Logo" style="width:30px;height:30px;vertical-align:middle;border-radius:50%;">
+      </span>
+      <span>Family Bakery &copy; 2025</span>
+    </div>
+    <div>
+      Made with ♥ by Barazely
+    </div>
+  </footer>
+</body>
+</html>
